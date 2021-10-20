@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Bd_rep">
+   <children>
+      <BarChart fx:id="birth_graph" layoutY="14.0" prefHeight="212.0" prefWidth="280.0" title="Birth Rate">
+        <xAxis>
+          <CategoryAxis label="month" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="No. of births" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="death_graph" layoutX="308.0" layoutY="14.0" prefHeight="212.0" prefWidth="280.0" title="Death Rate">
+        <xAxis>
+          <CategoryAxis label="month" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="no. of deaths" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="254.0" layoutY="249.0" mnemonicParsing="false" onAction="#on_back" style="-fx-background-color: #00a4e4;" text="Back" textFill="#f8f6f6" />
+   </children>
+</AnchorPane>

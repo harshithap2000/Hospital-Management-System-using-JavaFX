@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PatientDash">
+    <children>
+        <VBox layoutY="-6.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="601.0" prefWidth="200.0" style="-fx-background-color: #00A4E4;">
+            <children>
+                <ImageView fitHeight="118.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true" />
+                <Button alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#home_button" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #00A4E4;" text="Home" textFill="#f8f4f4">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/home.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#staff_deet" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #00A4E4;" text="Doctor Details" textFill="#f8f4f4">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/staff_icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#fix_appointment" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #00A4E4;" text="Fix Appointments" textFill="#fffdfd">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/appointmenticon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#room_availability" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #00A4E4;" text="Room Available" textFill="#f8f5f5">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/bedicon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#sign_out" prefHeight="52.0" prefWidth="208.0" style="-fx-background-color: #00A4E4;" text="Sign out" textFill="#f8f6f6">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/logout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+      <Label fx:id="welcome_text" layoutX="330.0" layoutY="40.0" prefHeight="58.0" prefWidth="259.0" text="WELCOME " textFill="#00a4e4">
+         <font>
+            <Font name="System Italic" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="737.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logg.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="set_name" layoutX="674.0" layoutY="6.0" prefHeight="17.0" prefWidth="98.0" textFill="#00a4e4" />
+      <Label layoutX="377.0" layoutY="98.0" text="Get Started" textFill="#00a4e4" />
+      <ImageView fitHeight="317.0" fitWidth="390.0" layoutX="254.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/safety.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

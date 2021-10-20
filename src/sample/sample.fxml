@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LandingPage">
+    <children>
+        <BorderPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-image: #f8f8ff;">
+            <left>
+                <AnchorPane prefHeight="457.0" prefWidth="354.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="296.0" fitWidth="382.0" layoutX="-26.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/checkinghomepage.jpg" />
+                            </image>
+                        </ImageView>
+                        <Text fill="#946200" layoutX="170.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO LINE" />
+                        <Text fill="#393737" layoutX="46.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="95.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet">
+                            <font>
+                                <Font name="System Italic" size="12.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="410.0" prefWidth="388.0" style="-fx-background-color: #6A737B;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Text fill="#4a4343" layoutX="55.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRUSTED DATABASE SYSTEM">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font></Text>
+                        <Text fill="#463434" layoutX="73.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur " wrappingWidth="274.080078125">
+                            <font>
+                                <Font size="12.0" />
+                            </font></Text>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="19.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/adminhomepage.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="134.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/doctorhomepage.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="234.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/face.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="admin" layoutX="35.0" layoutY="317.0" mnemonicParsing="false" onAction="#adminLogin" style="-fx-background-color: #00A4E4;" text="Admin" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" />
+                        <Button fx:id="patient" layoutX="251.0" layoutY="317.0" mnemonicParsing="false" onAction="#patientLogin" style="-fx-background-color: #00A4E4;" text="Patient" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" />
+                        <Button fx:id="doctor" layoutX="147.0" layoutY="263.0" mnemonicParsing="false" onAction="#doctorLogin" style="-fx-background-color: #00A4E4;" text="Doctor" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" />
+                        <Text fill="#f2ebe9" layoutX="125.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+                            <font>
+                                <Font name="Roboto Black" size="32.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
